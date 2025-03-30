@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073877674622",
+    "project_id": "pocketsquares-9a173",
+    "storage_bucket": "pocketsquares-9a173.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073877674622:android:c376e39d2fca66bc84462f",
+        "android_client_info": {
+          "package_name": "com.robcollinstech.pocketSquares"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1E7-jAFXkkoYbeqQIKz-uoyMtfrjKcm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
