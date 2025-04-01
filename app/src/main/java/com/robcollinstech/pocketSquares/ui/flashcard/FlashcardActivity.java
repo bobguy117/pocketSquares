@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class FlashcardActivity extends AppCompatActivity {
-
+    private FirebaseAuth mAuth;
     private TextView frontTextView;
     private TextView backTextView;
     private boolean isFront = true; // Keeps track of the current side
@@ -17,6 +19,8 @@ public class FlashcardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard);
+
+        mAuth = FirebaseAuth.getInstance();
 
         frontTextView = findViewById(R.id.frontText);
         backTextView = findViewById(R.id.backText);
@@ -30,6 +34,18 @@ public class FlashcardActivity extends AppCompatActivity {
 
         // Add an onClickListener to flip the card when tapped
         findViewById(R.id.flashcard_container).setOnClickListener(v -> flipCard());
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        //TODO:
+        /*
+        if (currentUser == null) {
+            break;// Redirect to login screen if the user is not signed in
+        }
+        */
     }
 
     private void flipCard() {
