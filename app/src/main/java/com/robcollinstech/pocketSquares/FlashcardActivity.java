@@ -1,6 +1,5 @@
-package com.robcollinstech.pocketSquares.ui.flashcard;
+package com.robcollinstech.pocketSquares;
 
-import com.robcollinstech.pocketSquares.R;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.robcollinstech.pocketSquares.ui.flashcard.Flashcard;
 
 public class FlashcardActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
