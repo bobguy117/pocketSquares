@@ -32,6 +32,7 @@ public class SignUpActivity extends AppCompatActivity {
         signUpButton = findViewById(R.id.signUpButton);
 
         signUpButton.setOnClickListener(v -> registerUser());
+
     }
 
     private void registerUser() {

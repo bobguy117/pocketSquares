@@ -26,11 +26,19 @@
         </activity>
 
         <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.PocketSquares.NoActionBar">
+        </activity>
+
+
+
+        <activity
             android:name=".FlashcardActivity"
             android:exported="true"
             android:resizeableActivity="true"
-            android:theme="@style/Theme.PocketSquares.NoActionBar"
-            tools:targetApi="34">
+            android:theme="@style/Theme.PocketSquares.NoActionBar">
         </activity>
 
 

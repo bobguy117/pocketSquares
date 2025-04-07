@@ -36,7 +36,7 @@ public class SignInActivity extends AppCompatActivity {
 
         signUpTextView.setOnClickListener(v -> {
             // Navigate to SignUpActivity (to be created later)
-            Intent intent = new Intent(SignInActivity.this, SignInActivity.class);
+            Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
             startActivity(intent);
         });
     }
@@ -57,7 +57,7 @@ public class SignInActivity extends AppCompatActivity {
                         if (user != null) {
                             Toast.makeText(SignInActivity.this, "Sign in successful!", Toast.LENGTH_SHORT).show();
                             // Navigate to the main activity
-                            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                            Intent intent = new Intent(SignInActivity.this, FlashcardActivity.class);
                             startActivity(intent);
                             finish(); // Close sign-in activity
                         }
